@@ -27,8 +27,8 @@
             <td>${student.studentId}</td>
             <td>${student.email}</td>
             <td>
-                <a href="/editStudent/${student.id}">Modifier</a>
-                <a href="/deleteStudent/${student.id}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet étudiant ?')">Supprimer</a>
+                <a href="${pageContext.request.contextPath}/editStudent/${student.id}">Modifier</a>
+                <a href="${pageContext.request.contextPath}/deleteStudent/${student.id}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet étudiant ?')">Supprimer</a>
             </td>
         </tr>
     </c:forEach>
