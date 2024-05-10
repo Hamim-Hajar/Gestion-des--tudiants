@@ -24,6 +24,10 @@ public class HelloController {
 
     private int idCounter = 1;
     @GetMapping("/")
+    public String home(ModelMap modelMap){
+        return "home";
+    }
+    @GetMapping("/hello_world")
     public String getAllStudents(ModelMap modelMap) {
         modelMap.addAttribute("students", students);
         return "hello_world";

@@ -168,14 +168,11 @@
         <h1>Mon Site Web</h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À Propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="${pageContext.request.contextPath}/" class="add-button">home</a></li>
+                <li><a href="${pageContext.request.contextPath}/addStudent/" class="add-button">Ajouter un Etudiant</a></li>
+
             </ul>
         </nav>
-        <button>Connexion</button>
-        <button>S'inscrire</button>
     </div>
 </header>
 
@@ -209,7 +206,7 @@
     </table>
 
     <h2>Ajouter un Étudiant</h2>
-    <a href="${pageContext.request.contextPath}/addStudent/" class="add-button">Ajouter</a>
+
 </div>
 
 <footer>
